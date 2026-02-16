@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      <div className="container mx-auto px-4 py-16">
+      <Navbar />
+      <div className="container mx-auto px-4 pt-24 py-16">
         <header className="text-center mb-16">
           <div className="flex justify-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
@@ -30,7 +32,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="grid md:grid-cols-3 gap-8 mb-16">
+        <section id="features" className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
             <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
               <span className="text-white text-xl">🧠</span>
@@ -62,7 +64,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="text-center mb-16">
+        <section id="about" className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-8">Trusted by Industry Leaders</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
             <div className="text-white text-2xl font-bold">TechCorp</div>
@@ -72,7 +74,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="text-center text-gray-400 border-t border-gray-800 pt-8">
+        <footer id="contact" className="text-center text-gray-400 border-t border-gray-800 pt-8">
           <p>&copy; 2024 AI Startup. Building the future, one algorithm at a time.</p>
         </footer>
       </div>
